@@ -1,86 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>发家致富</title>
-    <script>
-        function getballred(){
-            n1=Math.floor(Math.random()*33)+1;
-            do{
-                n2=Math.floor(Math.random()*33)+1;
-            }while(n2==n1);
-
-            do{
-                n3=Math.floor(Math.random()*33)+1;
-            }while(n3==n2||n3==n1);
-
-            do{
-                n4=Math.floor(Math.random()*33)+1;
-            }while(n4==n3||n4==n2||n4==n1);
-
-            do{
-                n5=Math.floor(Math.random()*33)+1;
-            }while(n5==n3||n5==n2||n5==n1||n5==n4);
-
-            do{
-                n6=Math.floor(Math.random()*33)+1;
-            }while(n6==n3||n6==n2||n6==n1||n6==n4||n6==n5);
-
-            var hellos = new Array();
-            hellos.push(n1);
-            hellos.push(n2);
-            hellos.push(n3);
-            hellos.push(n4);
-            hellos.push(n5);
-            hellos.push(n6);
-            hellos.sort(function(a,b){
-                return a-b;
-            });
-
-            document.getElementById("red1").innerHTML= hellos[0];
-            document.getElementById("red2").innerHTML= hellos[1];
-            document.getElementById("red3").innerHTML= hellos[2];
-            document.getElementById("red4").innerHTML= hellos[3];
-            document.getElementById("red5").innerHTML= hellos[4];
-            document.getElementById("red6").innerHTML= hellos[5];
-            b1=Math.floor(Math.random()*16)+1;
-            document.getElementById("blue1").innerHTML=b1;
-        }
-
-    </script>
-    <style>
-        li{
-            float: left;
-            list-style-type: none;
-            height: 20px;
-            width: 40px;
-            background-color: red;
-            text-align: center;
-            margin: 1px;
-            color:white;
-        }
-
-        #blue1{
-            color: white;
-            background-color: blue;
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>发家致富</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.34">
+  <style type="text/css">
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 11.0px '.PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+    li.li2 {margin: 0.0px 1.0px 1.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #ffffff; background-color: #ff0000}
+    li.li3 {margin: 0.0px 1.0px 1.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #ffffff; background-color: #0000ff}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #c0c0c0}
+    span.s3 {font: 11.0px '.AppleSystemUIFont'; font-kerning: none; background-color: #c0c0c0}
+    span.s4 {font: 12.0px Times; font-kerning: none}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
 <body>
-    <div>
-        <h3>随机生成6+1福利彩票随机数，并让红球按从小到大排列</h3>
-        <ul class="redb">
-            <li id="red1"></li>
-            <li id="red2"></li>
-            <li id="red3"></li>
-            <li id="red4"></li>
-            <li id="red5"></li>
-            <li id="red6"></li>
-            <li id="blue1"></li>
-        </ul>
-        <button onclick="getballred()">老板来一注500万</button>
-    </div>
-
-
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px 'Songti SC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>随机生成福利彩票随机数，并让红球按从小到大排列</b></span></h3>
+<ul class="ul1">
+  <li class="li2"></li>
+  <li class="li2"></li>
+  <li class="li2"></li>
+  <li class="li2"></li>
+  <li class="li2"></li>
+  <li class="li2"></li>
+  <li class="li3"></li>
+</ul>
+<p class="p4"><span class="s2">老板来一注</span><span class="s3">500</span><span class="s2">万</span><span class="s4"><span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
