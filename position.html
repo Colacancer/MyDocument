@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position总结</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*背景图片不随页面滚动*/
+        body{
+            background-image: url("draw.2.16.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            position: relative;
+            top: 10px;
+            left: 10px;
+            height: 500px;
+            width: 500px;
+            background-color: lime;
+            z-index: 0;
+        }
+        .note{
+            width: 300px;
+            position: absolute;
+            left: 700px;
+            top: 0;
+            background-color: aqua;
+        }
+        #firsth1{
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+        #secondh1{
+            position: inherit;
+        }
+
+        /*浏览器居中方块设置start*/
+        #midcontainer{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            height: 10px;
+            width: 10px;
+        }
+        #mid{
+            position: relative;
+            margin-left: -50px;
+            margin-top: -50px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            z-index: 1;
+        }
+
+
+        /*浏览器居中end*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="firsth1">第一个标题absolute定位</h1>
+        <h1 id="secondh1">inherit继承父类定位</h1>
+    </div>
+
+    <!--浏览器居中-->
+    <div id="midcontainer">
+        <div id="mid"><p>浏览器居中方块</p></div>
+    </div>
+
+    <div class="note">
+        <p>relative，位置相对于父类元素而定</p>
+        <p>absolute,位置相对于窗口而定</p>
+        <p>inherit只继承父类position属性，不继承位置</p>
+        <p>fixed绝对定位，相对于浏览器窗口进行定位</p>
+        <p>z-index设置盒子堆叠顺序，－1表示优先级低，默认为0，值越大优先级越高</p>
+        <p>visibiliti设置元素是否可见</p>
+    </div>
+</body>
+</html>
